@@ -47,6 +47,25 @@ class Image(models.Model):
     description = models.TextField()
     date_posted = models.DateTimeField(auto_now_add = True)
     location = models.ForeignKey(Location)
+   
+    @classmethod
+    def search_by_category(cls,search_term):
+        slypics = cls.objects.filter(category__icontains=search_term)
+        return slypics
+    @classmethod
+    def location(cls):
+        today = dt.date.today()
+        slypics = cls.objects.all()
+        return slypics
+    @classmethod
+    def moringa(cls,moringa):
+        today = dt.date.today()
+        pixels = cls.objects.filter(location__icontains = 'moringa')
+        return slypics
+    @classmethod
+    def westlands(cls,westlands):
+        today = dt.date.today()
+        slypics = cls.objects.filter(location__icontains = 'westlands')
+        return slypics
+   
 
-
-    

@@ -1,10 +1,9 @@
 
-
 from django.contrib import admin
+from .models import Category,Location,Image
+class ImageAdmin(admin.ModelAdmin):
+    
 
-from .models import *
-
-
-admin.site.register(Category)
-admin.site.register(Location)
-admin.site.register(Image)
+    admin.site.register(Category)
+    admin.site.register(Image)
+    admin.site.register(Location)
