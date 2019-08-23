@@ -1,37 +1,27 @@
 
-{% extends 'base.html'%}
+{%extends 'locations/base.html'%} 
 {% block content %}
+<div class="container">
 
-<div class="container text-center">
-  {% if images %}
-  <h5>Found {{ images|length }} of search term {{message}}</h5>
-  {% else %}
-  <h5> Found 0 images for the search term {{message}}</h5>
-  {% endif %}
-</div>
-<div class="main-warp">
+  <div class="row">
+    {% if slypics%}
+      <h2>Found {{ slypics|length }} of searched term {{message}}</h2>
+    {% else %}
+      <h2> Found 0 slypics for the search term {{message}}</h2>
+    {% endif %}
 
-  <!-- Page section -->
-  <div class="page-section gallery-page">
+  </div>
 
-    <div class="portfolio-gallery">
+  <div class="row">
 
-      {% for image in images %}
-      <div class="pics">
-        <div class="hover-links animated flipInY">
-          <!-- <a href="" class="site-btn sb-light">Next</a> -->
-          <p class="text-center"> <strong>Name : </strong>
-            {{ image.Name }} </p>
-          <hr>
-          <p class="text-center"><strong>Location : </strong>
-            {{image.location}} </p>
-          <hr>
-          <p class="text-center"><strong>Category : </strong>
-            {{image.category}} </p>
-        </div>
+  {% if slypics %}
+    {% for slypics in slypics %}
+      <div class="col-sm-6 col-md-3">
+          <h1>{{slypics.category}}</h1>
+          
       </div>
-      {% endfor %}
-    </div>
+    {% endfor %}
+  {% endif %}
   </div>
 </div>
 {% endblock %}
