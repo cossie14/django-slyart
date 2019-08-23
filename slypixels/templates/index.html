@@ -1,0 +1,62 @@
+
+{%extends 'all-pics/base.html'%}
+
+{%block content%}
+
+{{block.super}}
+<div class="head bg-warning">
+  <p class='text-center galleria'>SlyArt</p>
+  <p class='text-center'>Welcome to Sly Art!</p>
+</div>
+
+
+<!-- and ends here -->
+
+
+  <div class="container-fluid">
+    <!-- loop through images in database -->
+    <div class="row_image">
+    {% for image in images %}
+
+    <div class="test column_image all_images">
+      <img style="width:100%" src="{{image.image.url}}" alt="images" data-toggle="modal" data-target="#{{image.image_name}}">
+
+      <div id="{{image.image_name}}" class="modal fade bd-example-modal-xl p-4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="">
+              <h3 class="text-center">{{image.image_name}}</h3>
+              <img width="100%"src="{{image.image.url}}" alt="check"><br>
+              <br><div class="details container">
+                <button type="button" class="btn btn-outline-info" name="button">{{image.category}}</button>
+                <hr>
+                <h4>Image Description</h4>
+                <p>{{image.image_description}}</p>
+                <hr>
+                <h4>Location</h4>
+                <p>Snapped in {{image.location}}</p>
+                <hr>
+                <input type="text" name="" value="" placeholder="{{image.image}}" class="text-muted">
+                <button type="button" name="button" class="btn btn-info" value="{{image.image.url}}" onclick="copylink(this.value)">Copy Image Link</button>
+              </div><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  {%empty%}
+  <div class="row">
+    <div class="col-md-12 nuttnhere">
+      <h1>No pics yet</h1>
+    </div>
+
+  </div>
+  {%  endfor %}
+  </div>
+  </div>
+  {%endblock%}
