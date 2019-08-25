@@ -1,0 +1,1 @@
+web: gunicorn slypics.wsgi --log-file -
