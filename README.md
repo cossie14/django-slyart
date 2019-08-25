@@ -6,7 +6,7 @@ Sylviah Rutto
 
 
 ## Description
-This is a personal gallery application that enables me to post images for other users to see. A user can click on an image to view it's details and search in my application for images based on categories.
+A django application that allows uers to post images for other users to see. A user can click on an image to view it's details and search in my application for images based on categories.
 
 ## BDD
   # The behaviors implemented include;
@@ -14,7 +14,7 @@ This is a personal gallery application that enables me to post images for other 
 2 Allows saving of uploaded images<br>
 3 Show image details on modal	 <br>
 4 Copy shortcut for images<br>
-5Show image as per location	<br
+5 Show image as per location	<br
 6 Allows admin to update images<br>
 7 Exit the application
 
