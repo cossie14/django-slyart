@@ -67,5 +67,9 @@ class Image(models.Model):
         today = dt.date.today()
         slypics = cls.objects.filter(location__icontains = 'westlands')
         return slypics
-   
+    @classmethod
+    def search_by_cat(cls, search_term):
+        images=cls.objects.filter(category__icontains=search_term)
+        return images
+
 

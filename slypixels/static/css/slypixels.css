@@ -1,0 +1,48 @@
+h1
+{
+  color: green;
+}
+body{
+  color:palevioletred;
+  font-family: serif;
+}
+
+.head p{
+  background-color: palevioletred;
+}
+.sly{
+  font-size: 50px;;
+  background-color: black;
+  background-image: url('https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjokJKb3Z7kAhWExoUKHV-5BUEQjRx6BAgBEAQ&url=https%3A%2F%2Ffriendlystock.com%2Fproduct%2Fearth-from-space-background%2F&psig=AOvVaw0upwzKI5KErCl6rP3_Qil6&ust=1566846734881827');  
+}
+.art{
+  background-repeat: no-repeat;
+  font-style: inherit;
+  background-size:  cover;
+  color: white;
+  font-size: 3.9em;
+  font-family: 'Cookie' ,cursive;
+  
+}
+nav a{
+  color: aquamarine;
+}
+
+
+}
+.modal-content{
+  margin: 25%;
+  border: 10%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    max-width: 60%;
+    -ms-flex: 60%;
+    flex: 60%;
+   
+  .sly
+      color: white;
+      font-size:50px;
+  }
