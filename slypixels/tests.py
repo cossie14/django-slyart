@@ -8,11 +8,8 @@ class ImageTestClass(TestCase):
         self.loc1=Location(location="Moringa")
         self.loc1.save_location()
         '''Creating a new category and saving it'''
-        self.cat1=Category(category="")
-        self.cat1.save_category()
-        '''Creating a new image and saving it'''
-        self.img1=Image(image_name="scenery",image_description="an image test",location=self.loc1,category=self.cat1)
-        self.img1.save()
+      
+    
 
     def tearDown(self):
         Image.objects.all().delete()
@@ -20,13 +17,12 @@ class ImageTestClass(TestCase):
         Location.objects.all().delete()
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.img1,Image))
+        self.assertTrue(isinstance(self.Image))
 
     '''
     test to save images
     '''
     def test_save_image(self):
-        self.img1.save_image()
         images=Image.objects.all()
         self.assertTrue(len(images)>0)
 
@@ -56,9 +52,7 @@ class LocationTestClass(TestCase):
         self.assertTrue(len(locations)>0)
 
 class CategoryTestClass(TestCase):
-    def setUp(self):
-        self.cat1=Category(category="")
-
+  
     def test_instance(self):
         self.assertTrue(isinstance(self.cat1,Category))
 
