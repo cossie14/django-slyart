@@ -4,7 +4,8 @@ h1
 }
 body{
   color:palevioletred;
-  font-family: serif;
+  font-family: serif;  background-image: url('https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjokJKb3Z7kAhWExoUKHV-5BUEQjRx6BAgBEAQ&url=https%3A%2F%2Ffriendlystock.com%2Fproduct%2Fearth-from-space-background%2F&psig=AOvVaw0upwzKI5KErCl6rP3_Qil6&ust=1566846734881827');
+
 }
 
 .head p{
@@ -42,9 +43,6 @@ nav a{
     -ms-flex: 60%;
     flex: 60%;
    
-  .sly
-      color: white;
-      font-size:50px;
   }
 
 
@@ -53,5 +51,9 @@ nav a{
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 2px;
+}
+.sly{
+  color: white;
+font-size:50px;
 }
