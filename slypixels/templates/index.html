@@ -31,7 +31,7 @@
       <h2> {{ image_item.category }} </h2>
     
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"style="padding:0 2px;flex-wrap: wrap;"></div>
-      <img style="width:100%" src="{{image_item.image.url}}" alt="images" data-toggle="modal" data-target="#{{image_item.id}}">
+      <img style="width:90%" src="{{image_item.image.url}}" alt="images" data-toggle="modal" data-target="#{{image_item.id}}">
 
       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"style="padding:0 4px;flex: 25%;">
     </div>
@@ -56,6 +56,7 @@
                 <hr>
                 <input type="text" name="" value="" placeholder="{{image_item.image}}" class="text-muted">
                 <button type="button" name="button" class="btn btn-info" value="{{image_item.image_url}}" onclick="copylink(this.value)">Copy Image Link</button>
+              
               </div><br><br>
             </div>
           </div>
