@@ -6,7 +6,7 @@ Sylviah Rutto
 
 
 ## Description
-A django application that allows users to add images for other users to see. A user can also click on an image to view it's details and search in the application for images based on categories.
+A django application that allows users to add images for other users to see,click on an image to view it's details and search in the application for images based on categories.
 
 ## BDD
   ### The behaviors implemented include;
