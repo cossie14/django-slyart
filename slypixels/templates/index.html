@@ -28,14 +28,14 @@
     {% for image_item in image %}
     <h2> {{ image_item.category }} </h2>
     <div class="test column_image all_images">
-      <img style="width:100%" src="{{image_item.image.url}}" alt="images" data-toggle="modal" data-target="#{{image.image}}">
+      <img style="width:50%" src="{{image_item.image_url}}" alt="images" data-toggle="modal" data-target="#{{image.image}}">
 
       <div id="{{image_item.image_name}}" class="modal fade bd-example-modal-xl p-4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="">
               <h1 class="text-center">{{image_item.image}}</h1>
-              <img width="100%"src="{{image.image.url}}" alt="check"><br>
+              <img width="100%"src="{{image.image_url}}" alt="check"><br>
               <br><div class="details container">
                 <button type="button" class="btn btn-outline-info" name="button">{{image_item.category}}</button>
                 <hr>
@@ -46,7 +46,7 @@
                 <p>Snapped in {{image_item.location}}</p>
                 <hr>
                 <input type="text" name="" value="" placeholder="{{image_item.image}}" class="text-muted">
-                <button type="button" name="button" class="btn btn-info" value="{{image_item.image.url}}" onclick="copylink(this.value)">Copy Image Link</button>
+                <button type="button" name="button" class="btn btn-info" value="{{image_item.image_url}}" onclick="copylink(this.value)">Copy Image Link</button>
               </div><br><br>
             </div>
           </div>

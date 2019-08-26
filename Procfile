@@ -1,1 +1,1 @@
-web: gunicorn slypics.wsgi --log-file -
+web: gunicorn slyart.wsgi --log-file -
