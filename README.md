@@ -9,12 +9,12 @@ Sylviah Rutto
 A django application that allows users to add images for other users to see. A user can also click on an image to view it's details and search in the application for images based on categories.
 
 ## BDD
-  # The behaviors implemented include;
+  ### The behaviors implemented include;
 1 Displays all photos on database <br>
 2 Allows saving of uploaded images<br>
 3 Show image details on modal	 <br>
 4 Copy shortcut for images<br>
-5 Show image as per location	<br
+5 Show image as per location	<br>
 6 Allows admin to update images<br>
 7 Exit the application
 
