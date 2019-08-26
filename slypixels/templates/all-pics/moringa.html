@@ -41,13 +41,22 @@
                 <hr>
                 <h2>Image Description</h2>
                 <p>{{image_item.image_description}}</p>
+                <p>Babies are gifts from above</p>
                 <hr>
                 <h2>Location</h2>
-                <p>Snapped in {{image_item.id}}</p>
+                <p>Snapped in Westlands</p>
                 <hr>
                 <input type="text" name="" value="" placeholder="{{image_item.image}}" class="text-muted">
                 <button type="button" name="button" class="btn btn-info" value="{{image_item.image_url}}" onclick="copylink(this.value)">Copy Image Link</button>
+          
+                <div class="my image">
+                  <img src="https://media0.giphy.com/media/pt0EKLDJmVvlS/200w.webp?cid=790b76115d43d1b56763746336efef48&rid=200w.webp" alt="my image" width:100%; height:100px;>
+               </div>
+          
+          
               </div><br><br>
+
+
             </div>
           </div>
         </div>
@@ -62,5 +71,7 @@
   {% endfor %}
 
 </div>
-
+<div class="my image">
+  <img src="https://media0.giphy.com/media/pt0EKLDJmVvlS/200w.webp?cid=790b76115d43d1b56763746336efef48&rid=200w.webp" alt="my image" width:100%; height:100px;>
+</div>
 {% endblock %}
