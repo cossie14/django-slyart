@@ -12,13 +12,13 @@ def allpics(request):
 
 def moringa(request):
     date = dt.date.today()
-    slypics = Image.objects.filter(Location=3)
-    return render(request, 'all-pics/moringa.html', {"date": date,"slypics":slypics})
+    image = Image.objects.filter(category=1)
+    return render(request, 'all-pics/moringa.html', {"date": date,"image":image})
 
 def westlands(request):
     date = dt.date.today()
-    slypics = Image.objects.filter(Location=5)
-    return render(request, 'all-pics/westlands.html', {"date": date,"slypics":slypics})
+    image = Image.objects.filter(category=2)
+    return render(request, 'all-pics/westlands.html', {"date": date,"image":image})
 
 def search_results(request):
 
